@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This App has been deployed on Vercel to access visit : https://globe-gazer.vercel.app/ .
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Globe Gazer
+
+Globe Gazer is a web application built with Next.js and Tailwind CSS that allows users to search for countries and explore their languages, population, and more.
+
+### Installation
+
+To install Globe Gazer, follow these steps:
+
+1.  Clone the repository to your local machine:
+    
+    `git clone https://github.com/your-username/globe-gazer.git` 
+    
+2.  Navigate to the project directory:
+    
+    `cd globe-gazer` 
+    
+3.  Install the dependencies:
+    
+    `npm install` 
+    
+4.  Start the development server:
+    
+    `npm run dev` 
+    
+5.  Open your web browser and navigate to `http://localhost:3000` to view the application.
+
+### Usage
+
+To use Globe Gazer, follow these steps:
+
+1.  Enter the name of a country you want to learn about in the search bar on the home page.
+2.  Click the "Search" button .
+3.  The application will fetch data from the restcountries.com API and display the search results in a card format.
+4.  Click on the logo image to return to the home page.
+
+### Deployment
+
+To deploy Globe Gazer to a production environment, follow these steps:
+
+1.  Build the production version of the application:
+    
+    `npm run build` 
+    
+2.  Start the production server:
+    
+    `npm start` 
+    
+3.  Open your web browser and navigate to `http://localhost:3000` to view the application.
+
+Note that you will need to configure your production environment to set the `NODE_ENV` environment variable to `production` in order to run the production version of the application.
+
+### Credits
+
+Globe Gazer was created by Joseph Endale. The application uses data from the restcountries.com API and icons from the Heroicons library.
+
+### License
+
+Globe Gazer is licensed under the MIT License. See the `LICENSE` file for more information.
