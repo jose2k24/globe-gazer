@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import { GlobeEuropeAfricaIcon,VariableIcon, MapPinIcon, LanguageIcon } from '@heroicons/react/24/outline';
+import { HeartIcon, GlobeEuropeAfricaIcon, VariableIcon, MapPinIcon, LanguageIcon } from '@heroicons/react/24/outline';
 import Image from "next/image";
 
 
@@ -8,6 +8,7 @@ export default function Home() {
   const [query, setQuery] = useState('');
   const [countryData, setCountryData] = useState(null);
   const [error, setError] = useState(null);
+
 
   const searchCountry = async () => {
     if (query.trim() === '') {
@@ -32,24 +33,28 @@ export default function Home() {
     }
   };
 
-
   return (
 
-    <div className="flex flex-col h-screen backdrop-blur-sm bg-slate-600/30 bg-opacity-70 bg-slate-600 items-center justify-center mx-auto p-4">
-      
+    <div className="flex flex-col h-screen backdrop-blur-sm bg-slate-500/30 bg-opacity-70 bg-slate-600 items-center justify-center mx-auto p-4">
 
-        <Image
-          src="/logo.png"
-          alt="logo"
-          width={150}
-          height={150}
-          className='mb-8 item-center justify-center'
-        />
-      
+
+      <Image
+        src="/logo.png"
+        alt="logo"
+        width={150}
+        height={150}
+        className='mb-8 item-center justify-center'
+      />
+
       <h1 className="text-3xl font-bold mb-4 text-slate-900 ">Welome To Globe Gazer</h1>
 
       <p className='mx-auto p-4'> Discover the World: Search for Countries and Explore their Languages, Population, and More! </p>
-
+      <p className="flex p-2 items-center text-sm text-gray-300">
+        Made with
+        <HeartIcon className="w-4 h-4 mx-1 text-red-500" />
+        by
+        <span className="font-bold ml-1 text-lime-400">Joseph Endale</span>
+      </p>
       <div className="flex space-y-25">
         <input
           type="text"
