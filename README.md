@@ -35,7 +35,6 @@ To use Globe Gazer, follow these steps:
 1.  Enter the name of a country you want to learn about in the search bar on the home page.
 2.  Click the "Search" button .
 3.  The application will fetch data from the restcountries.com API and display the search results in a card format.
-4.  Click on the logo image to return to the home page.
 
 ### Deployment
 
