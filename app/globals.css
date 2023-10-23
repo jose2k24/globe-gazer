@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*custom css*/
+body {
+    background-image: url('../assets/Designer.png');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
